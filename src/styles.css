@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  color: #494646;
+  background-color: #F4F9FA;
+}
+
+a {
+  text-decoration: none;
+}
