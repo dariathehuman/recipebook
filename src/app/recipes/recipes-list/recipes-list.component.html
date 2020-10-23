@@ -1,1 +1,7 @@
-<p>recipes-list works!</p>
+<app-recipes-item
+  *ngFor="let recipeItem of recipes"
+  [recipe]="recipeItem"
+  (recipeSelected)="onRecipeSelected(recipeItem)"
+></app-recipes-item>
+
+<button class="recipe-button" type="button">New Recipe</button>

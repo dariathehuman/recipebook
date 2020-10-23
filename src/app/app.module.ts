@@ -9,6 +9,8 @@ import { RecipesListComponent } from './recipes/recipes-list/recipes-list.compon
 import { RecipesDetailsComponent } from './recipes/recipes-details/recipes-details.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { ArrowDownLargeComponent } from './modules/icons/arrow-down-large/arrow-down-large.component';
+import { RecipesItemComponent } from './recipes/recipes-list/recipes-item/recipes-item.component';
+import { ArrowDownSmallComponent } from './modules/icons/arrow-down-small/arrow-down-small.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ArrowDownLargeComponent } from './modules/icons/arrow-down-large/arrow-
     RecipesListComponent,
     RecipesDetailsComponent,
     ShoppingEditComponent,
-    ArrowDownLargeComponent
+    ArrowDownLargeComponent,
+    RecipesItemComponent,
+    ArrowDownSmallComponent
   ],
   imports: [
     BrowserModule

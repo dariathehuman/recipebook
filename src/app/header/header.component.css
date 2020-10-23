@@ -48,6 +48,7 @@
   font-size: 30px;
   line-height: 35px;
   color: #494646;
+  cursor: pointer;
 }
 
 .header__dropdown-menu {
