@@ -45,6 +45,10 @@
   margin-right: 72px;
 }
 
+.header__dropdown {
+  position: relative;
+}
+
 .header__dropdown-button {
   font-size: 30px;
   line-height: 35px;
@@ -54,15 +58,23 @@
 
 .header__dropdown-menu {
   display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
   padding: 16px 10px;
   list-style: none;
   background: #FFFFFF;
   border-radius: 10px;
 }
 
+.header__dropdown-menu--open {
+  display: block;
+}
+
 .header__dropdown-menu a {
   font-size: 18px;
   line-height: 21px;
+  color: #494646;
 }
 
 .header__dropdown-menu li:first-child {

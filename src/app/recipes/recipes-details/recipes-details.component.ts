@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {Recipe} from '../recipes.model';
+import { Recipe } from '../recipes.model';
+import { Ingredient } from '../../shared/ingredients.model';
 
 @Component({
   selector: 'app-recipes-details',
@@ -7,6 +8,12 @@ import {Recipe} from '../recipes.model';
   styleUrls: ['./recipes-details.component.css']
 })
 export class RecipesDetailsComponent implements OnInit {
+
+  isButtonClicked = false;
+
+  openManageRecipe() {
+    this.isButtonClicked = !this.isButtonClicked;
+  }
 
   @Input() recipe: Recipe;
 

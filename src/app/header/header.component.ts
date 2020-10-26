@@ -5,7 +5,10 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
+
 export class HeaderComponent implements OnInit {
+
+  isButtonClicked = false;
 
   @Output() featureSelected = new EventEmitter<string>();
 
@@ -13,9 +16,11 @@ export class HeaderComponent implements OnInit {
     this.featureSelected.emit(feature);
   }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  openManage() {
+    this.isButtonClicked = !this.isButtonClicked;
   }
 
+  constructor() { }
+
+  ngOnInit() {}
 }

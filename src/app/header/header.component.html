@@ -19,10 +19,14 @@
     </nav>
 
     <div class="header__dropdown">
-      <a class="header__dropdown-button">Manage
+      <a class="header__dropdown-button"
+         (click)="openManage()"
+      >Manage
         <app-arrow-down-large></app-arrow-down-large>
       </a>
-      <ul class="header__dropdown-menu">
+      <ul class="header__dropdown-menu"
+          [class.header__dropdown-menu--open]="isButtonClicked"
+      >
         <li><a href="">Save Data</a></li>
         <li><a href="">Fetch Data</a></li>
       </ul>

@@ -42,8 +42,18 @@
   border-radius: 10px;
 }
 
+.recipes-details__menu--open {
+  display: block;
+  transition: 0.7s ease-in-out;
+}
+
 .recipes-details__menu li {
   margin-bottom: 4px;
+}
+
+.recipes-details__menu a:hover {
+  color: #1C2C56;
+  transition: .4s;
 }
 
 .recipes-details__menu li:last-child {

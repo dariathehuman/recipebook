@@ -8,14 +8,24 @@
   <h1 class="recipes-details__title">{{recipe.name}}</h1>
   <p class="recipes-details__text">{{recipe.description}}</p>
 
-  <a class="recipes-details__button" role="button">Manage Recipe
+  <a
+    class="recipes-details__button"
+    role="button"
+    (click)="openManageRecipe()"
+  >Manage Recipe
     <app-arrow-down-small></app-arrow-down-small>
   </a>
 
-  <ul class="recipes-details__menu">
+  <ul class="recipes-details__menu"
+      [class.recipes-details__menu--open]="isButtonClicked"
+  >
     <li><a href="#">Add ingredients to Shopping List</a></li>
     <li><a href="#">Edit Recipe</a></li>
     <li><a href="#">Delete Recipe</a></li>
   </ul>
+
+  <div>
+    <p>Ingredients</p>
+  </div>
 
 </article>
