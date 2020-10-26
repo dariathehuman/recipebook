@@ -1,7 +1,5 @@
 <div class="recipes-container">
-  <app-recipes-list
-    (recipeWasSelected)="selectedRecipe = $event"
-  ></app-recipes-list>
+  <app-recipes-list></app-recipes-list>
   <app-recipes-details
     *ngIf="selectedRecipe; else infoText"
     [recipe]="selectedRecipe"
