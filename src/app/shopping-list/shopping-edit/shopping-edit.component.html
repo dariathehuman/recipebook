@@ -1,1 +1,44 @@
-<p>shopping-edit works!</p>
+<div class="shopping-list__form">
+  <div class="shopping-list__name">
+    <label for="name">Name</label>
+    <input #nameInput
+      class="shopping-list__input shopping-list__input--name"
+      type="text"
+      id="name"
+    >
+  </div>
+  <div class="shopping-list__amount">
+    <label for="amount">Amount</label>
+    <input #amountInput
+      class="shopping-list__input shopping-list__input--amount"
+      type="number"
+      id="amount"
+    >
+  </div>
+</div>
+
+<ul class="shopping-list__buttons">
+  <li>
+    <button
+      (click)="onAddItem()"
+      class="shopping-list__button shopping-list__button--add"
+      type="button"
+    >Add
+    </button>
+  </li>
+  <li>
+    <button
+      class="shopping-list__button shopping-list__button--delete"
+      type="button"
+    >Delete
+    </button>
+  </li>
+  <li>
+    <button
+      class="shopping-list__button shopping-list__button--clear"
+      type="button"
+    >Clear
+    </button>
+  </li>
+</ul>
+

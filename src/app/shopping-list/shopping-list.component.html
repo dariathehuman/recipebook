@@ -1,1 +1,12 @@
-<p>shopping-list works!</p>
+<div class="container">
+  <app-shopping-edit
+    (ingredientAdded)="onIngredientAdded($event)"
+  ></app-shopping-edit>
+  <ul class="shopping-list">
+    <li
+      class="shopping-list__item"
+      *ngFor="let ingredient of ingredients"
+    >{{ ingredient.name }} ({{ ingredient.amount }})
+    </li>
+  </ul>
+</div>

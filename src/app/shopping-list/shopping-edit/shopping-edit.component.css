@@ -1,0 +1,66 @@
+.shopping-list__form {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 24px 0;
+  width: 528px;
+}
+
+.shopping-list__name {
+  width: 384px;
+}
+
+.shopping-list__amount {
+  width: 112px;
+}
+
+.shopping-list__form label {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  color: #1C2C56;
+}
+
+.shopping-list__input{
+  width: 100%;
+  padding: 9px 24px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1C2C56;
+  background: #FFFFFF;
+  border: 1px solid #1C2C56;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.shopping-list__buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 528px;
+  list-style: none;
+}
+
+.shopping-list__button {
+  margin: 0 0 32px 0;
+  padding: 7px 10px;
+  width: 150px;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+}
+
+.shopping-list__button--add {
+  background: #AEC086;
+}
+
+.shopping-list__button--delete {
+  background: #B4504B;
+}
+
+.shopping-list__button--clear {
+  background: #1C2C56
+}

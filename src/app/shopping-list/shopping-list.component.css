@@ -1,0 +1,16 @@
+.shopping-list {
+  padding: 0;
+  list-style: none;
+}
+
+.shopping-list__item {
+  margin-bottom: 12px;
+  padding: 12px 24px;
+  width: 384px;
+  color: #1C2C56;
+  background: #FFFFFF;
+  border: 1px solid #1C2C56;
+  border-radius: 10px;
+  font-size: 22px;
+  line-height: 26px;
+}
