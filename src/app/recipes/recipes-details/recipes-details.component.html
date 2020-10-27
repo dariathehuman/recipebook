@@ -19,13 +19,18 @@
   <ul class="recipes-details__menu"
       [class.recipes-details__menu--open]="isButtonClicked"
   >
-    <li><a href="#">Add ingredients to Shopping List</a></li>
+    <li><a (click)="onAddShoppingList()">Add to Shopping List</a></li>
     <li><a href="#">Edit Recipe</a></li>
     <li><a href="#">Delete Recipe</a></li>
   </ul>
 
-  <div>
-    <p>Ingredients</p>
-  </div>
+  <ul class="recipes-details__ingredients">
+    <li
+      class="recipes-details__ingredients-item"
+      *ngFor="let ingredient of recipe.ingredients"
+    >
+      {{ ingredient.name }} – {{ ingredient.amount }}
+    </li>
+  </ul>
 
 </article>
