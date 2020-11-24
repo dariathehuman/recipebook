@@ -13,6 +13,9 @@ import { ArrowDownLargeComponent } from './modules/icons/arrow-down-large/arrow-
 import { RecipesItemComponent } from './recipes/recipes-list/recipes-item/recipes-item.component';
 import { ArrowDownSmallComponent } from './modules/icons/arrow-down-small/arrow-down-small.component';
 import {ShoppingListService} from './shopping-list/shopping-list.service';
+import {AppRoutingModule} from './app-routing.module';
+import { RecipesStartComponent } from './recipes/recipes-start/recipes-start.component';
+import { RecipesEditComponent } from './recipes/recipes-edit/recipes-edit.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +28,14 @@ import {ShoppingListService} from './shopping-list/shopping-list.service';
     ShoppingEditComponent,
     ArrowDownLargeComponent,
     RecipesItemComponent,
-    ArrowDownSmallComponent
+    ArrowDownSmallComponent,
+    RecipesStartComponent,
+    RecipesEditComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [ShoppingListService],
   bootstrap: [AppComponent]

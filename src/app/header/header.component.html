@@ -8,11 +8,13 @@
       <ul class="header__links">
         <li><a
           class="header__link"
-          (click)="onSelect('recipes')"
+          routerLinkActive="active"
+          [routerLink]="'recipes'"
         >Recipes</a></li>
         <li><a
           class="header__link"
-          (click)="onSelect('shopping-list')"
+          routerLinkActive="active"
+          [routerLink]="'shopping-list'"
         >Shopping List</a></li>
       </ul>
 
@@ -27,8 +29,8 @@
       <ul class="header__dropdown-menu"
           [class.header__dropdown-menu--open]="isButtonClicked"
       >
-        <li><a href="">Save Data</a></li>
-        <li><a href="">Fetch Data</a></li>
+        <li><a>Save Data</a></li>
+        <li><a>Fetch Data</a></li>
       </ul>
     </div>
   </div>

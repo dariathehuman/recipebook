@@ -1,4 +1,8 @@
-<article class="recipes-item" (click)="onSelected()">
+<article
+  class="recipes-item"
+  [routerLink]="[index]"
+  routerLinkActive="recipes-item--active"
+>
     <div class="recipes-item__description">
       <h1 class="recipes-item__title">{{ recipe.name }}</h1>
       <p class="recipes-item__text">{{ recipe.description }}</p>
