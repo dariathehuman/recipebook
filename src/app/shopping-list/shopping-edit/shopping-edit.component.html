@@ -1,44 +1,55 @@
-<div class="shopping-list__form">
-  <div class="shopping-list__name">
-    <label for="name">Name</label>
-    <input #nameInput
-      class="shopping-list__input shopping-list__input--name"
-      type="text"
-      id="name"
-    >
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+  <div class="shopping-list__form">
+    <div class="shopping-list__name">
+      <label for="name">Name</label>
+      <input class="shopping-list__input shopping-list__input--name"
+             type="text"
+             id="name"
+             name="name"
+             ngModel
+             required="required"
+      >
+    </div>
+    <div class="shopping-list__amount">
+      <label for="amount">Amount</label>
+      <input class="shopping-list__input shopping-list__input--amount"
+             type="number"
+             id="amount"
+             name="amount"
+             ngModel
+             required="required"
+             pattern="^[1-9]+[0-9]*$"
+      >
+    </div>
   </div>
-  <div class="shopping-list__amount">
-    <label for="amount">Amount</label>
-    <input #amountInput
-      class="shopping-list__input shopping-list__input--amount"
-      type="number"
-      id="amount"
-    >
-  </div>
-</div>
 
-<ul class="shopping-list__buttons">
-  <li>
-    <button
-      (click)="onAddItem()"
-      class="shopping-list__button shopping-list__button--add"
-      type="button"
-    >Add
-    </button>
-  </li>
-  <li>
-    <button
-      class="shopping-list__button shopping-list__button--delete"
-      type="button"
-    >Delete
-    </button>
-  </li>
-  <li>
-    <button
-      class="shopping-list__button shopping-list__button--clear"
-      type="button"
-    >Clear
-    </button>
-  </li>
-</ul>
+  <ul class="shopping-list__buttons">
+    <li>
+      <button
+        class="shopping-list__button shopping-list__button--add"
+        type="submit"
+        [disabled]="!form.valid"
+      >{{ editMode ? 'Update' : 'Add' }}
+      </button>
+    </li>
+    <li>
+      <button
+        *ngIf="editMode"
+        class="shopping-list__button shopping-list__button--delete"
+        type="button"
+        (click)="onDelete()"
+      >Delete
+      </button>
+    </li>
+    <li>
+      <button
+        class="shopping-list__button shopping-list__button--clear"
+        type="button"
+        (click)="onClear()"
+      >Clear
+      </button>
+    </li>
+  </ul>
+
+</form>
 

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -12,8 +13,8 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { ArrowDownLargeComponent } from './modules/icons/arrow-down-large/arrow-down-large.component';
 import { RecipesItemComponent } from './recipes/recipes-list/recipes-item/recipes-item.component';
 import { ArrowDownSmallComponent } from './modules/icons/arrow-down-small/arrow-down-small.component';
-import {ShoppingListService} from './shopping-list/shopping-list.service';
-import {AppRoutingModule} from './app-routing.module';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { AppRoutingModule } from './app-routing.module';
 import { RecipesStartComponent } from './recipes/recipes-start/recipes-start.component';
 import { RecipesEditComponent } from './recipes/recipes-edit/recipes-edit.component';
 
@@ -35,7 +36,8 @@ import { RecipesEditComponent } from './recipes/recipes-edit/recipes-edit.compon
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [ShoppingListService],
   bootstrap: [AppComponent]

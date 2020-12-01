@@ -3,7 +3,8 @@
   <ul class="shopping-list">
     <li
       class="shopping-list__item"
-      *ngFor="let ingredient of ingredients"
+      *ngFor="let ingredient of ingredients; let i = index"
+      (click)="onEditItem(i)"
     >{{ ingredient.name }} ({{ ingredient.amount }})
     </li>
   </ul>

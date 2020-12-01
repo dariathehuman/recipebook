@@ -10,6 +10,7 @@
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .recipes-item--active {
