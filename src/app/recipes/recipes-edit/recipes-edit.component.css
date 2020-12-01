@@ -1,0 +1,92 @@
+.edit-buttons {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.button {
+  margin-right: 40px;
+  padding: 7px 20px;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+}
+
+.save {
+  width: 150px;
+  background: #AEC086;
+}
+
+.cancel {
+  width: 150px;
+  background: #B4504B;
+}
+
+.edit-fields {
+  padding: 0;
+  list-style: none;
+}
+
+.edit-fields label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1C2C56;
+}
+
+.edit-fields input,
+.edit-fields textarea {
+  width: 100%;
+  padding: 7px 24px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1C2C56;
+  background: #FFFFFF;
+  border: 1px solid #1C2C56;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.edit-fields__item {
+  margin-bottom: 24px;
+}
+
+.ingredients-fields {
+  display: flex;
+  align-items: center;
+}
+
+.ingredients-field {
+  margin-right: 22px;
+  padding: 7px 24px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1C2C56;
+  background: #FFFFFF;
+  border: 1px solid #1C2C56;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.ingredients-field--name {
+  width: 230px;
+}
+
+.ingredients-field--amount {
+  width: 70px;
+  padding: 7px 12px;
+}
+
+.clear {
+  padding: 9px 13px;
+  font-size: 22px;
+  line-height: 100%;
+  color: #FFFFFF;
+  background: #B4504B;
+  border-radius: 10px;
+  border: none;
+}
+

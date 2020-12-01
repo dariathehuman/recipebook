@@ -1,1 +1,56 @@
-<p>recipes-edit works!</p>
+<form>
+  <div class="edit-buttons">
+    <button class="button save" type="submit">Save</button>
+    <button class="button cancel" type="button">Cancel</button>
+  </div>
+
+  <ul class="edit-fields">
+    <li class="edit-fields__item">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+      >
+    </li>
+
+    <li class="edit-fields__item">
+      <label for="url">Image URL</label>
+      <input
+        type="url"
+        name="name"
+        id="url"
+      >
+      <img src="" alt="">
+    </li>
+
+    <li class="edit-fields__item">
+      <label for="description">Description</label>
+      <textarea
+        name="description"
+        id="description"
+        rows="4"
+      ></textarea>
+    </li>
+  </ul>
+
+  <div class="ingredients-fields">
+    <label for="ingName"></label>
+    <input
+      class="ingredients-field ingredients-field--name"
+      type="text"
+      id="ingName"
+      name="ingName"
+    >
+
+    <label for="amount"></label>
+    <input
+      class="ingredients-field ingredients-field--amount"
+      type="number"
+      id="amount"
+      name="amount"
+    >
+    <button class="clear" type="button">X</button>
+  </div>
+
+</form>
