@@ -7,6 +7,6 @@
       <h1 class="recipes-item__title">{{ recipe.name }}</h1>
       <p class="recipes-item__text">{{ recipe.description }}</p>
     </div>
-    <img class="recipes-item__img" src="{{ recipe.imagePath }}" alt="{{ recipe.name }}">
+    <img class="recipes-item__img" [src]="recipe.imagePath" alt="{{ recipe.name }}">
 </article>
 

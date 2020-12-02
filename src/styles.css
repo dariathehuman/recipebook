@@ -22,6 +22,12 @@ button {
   cursor: pointer;
 }
 
+input,
+textarea {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: 300;
+}
+
 .container {
   padding-top: 40px;
   max-width: 1008px;

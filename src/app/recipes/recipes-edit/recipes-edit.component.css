@@ -40,8 +40,8 @@
 .edit-fields input,
 .edit-fields textarea {
   width: 100%;
-  padding: 7px 24px;
-  font-size: 20px;
+  padding: 7px 16px;
+  font-size: 16px;
   line-height: 24px;
   color: #1C2C56;
   background: #FFFFFF;
@@ -54,15 +54,25 @@
   margin-bottom: 24px;
 }
 
+.img-preview {
+  display: block;
+  width: 384px;
+  height: 384px;
+  object-fit: cover;
+  margin-top: 16px;
+  border-radius: 16px;
+}
+
 .ingredients-fields {
   display: flex;
   align-items: center;
+  margin-bottom: 8px;
 }
 
 .ingredients-field {
   margin-right: 22px;
-  padding: 7px 24px;
-  font-size: 20px;
+  padding: 7px 16px;
+  font-size: 16px;
   line-height: 24px;
   color: #1C2C56;
   background: #FFFFFF;
@@ -90,3 +100,18 @@
   border: none;
 }
 
+.add {
+  width: 200px;
+  margin-top: 24px;
+  padding: 11px 20px;
+}
+
+.button:disabled {
+  background: #B9C5C7;
+  cursor: not-allowed;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 1px solid #B4504B;
+}
