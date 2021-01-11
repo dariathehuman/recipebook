@@ -19,6 +19,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { RecipesStartComponent } from './recipes/recipes-start/recipes-start.component';
 import { RecipesEditComponent } from './recipes/recipes-edit/recipes-edit.component';
 import { RecipesService } from './recipes/recipes.service';
+import {AuthComponent} from './auth/auth.component';
+import { LoaderComponent } from './shared/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { RecipesService } from './recipes/recipes.service';
     RecipesItemComponent,
     ArrowDownSmallComponent,
     RecipesStartComponent,
-    RecipesEditComponent
+    RecipesEditComponent,
+    AuthComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
