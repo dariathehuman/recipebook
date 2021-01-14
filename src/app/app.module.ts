@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -21,6 +21,7 @@ import { RecipesEditComponent } from './recipes/recipes-edit/recipes-edit.compon
 import { RecipesService } from './recipes/recipes.service';
 import {AuthComponent} from './auth/auth.component';
 import { LoaderComponent } from './shared/loader/loader.component';
+import {AuthInterceptorService} from './auth/auth.interceptor.service';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,7 @@ import { LoaderComponent } from './shared/loader/loader.component';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [ShoppingListService, RecipesService],
+  providers: [ShoppingListService, RecipesService, {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -54,19 +54,26 @@
 
 .header__dropdown {
   position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.header__dropdown-logout {
+  cursor: pointer;
 }
 
 .header__dropdown-button {
-  font-size: 30px;
-  line-height: 35px;
   color: #494646;
   cursor: pointer;
+  margin-right: 24px;
 }
 
 .header__dropdown-menu {
   display: none;
   position: absolute;
-  top: 20px;
+  top: 16px;
   left: 0;
   padding: 16px 10px;
   list-style: none;
@@ -79,12 +86,24 @@
 }
 
 .header__dropdown-menu a {
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 24px;
+  line-height: 20px;
   color: #494646;
   cursor: pointer;
 }
 
 .header__dropdown-menu li:first-child {
   margin-bottom: 5px;
+}
+
+.header__dropdown a:hover {
+  color: #1C2C56;
+}
+
+.header__dropdown-arrow::ng-deep svg {
+  transition: fill 0.4s ease;
+}
+
+.header__dropdown a:hover .header__dropdown-arrow::ng-deep svg {
+  fill: #1C2C56;
 }

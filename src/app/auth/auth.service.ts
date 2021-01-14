@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import {catchError, tap} from 'rxjs/operators';
-import {Subject, throwError} from 'rxjs';
+import {BehaviorSubject, throwError} from 'rxjs';
 import {User} from './user.model';
 
 export interface AuthResponseData {
@@ -15,12 +15,13 @@ export interface AuthResponseData {
 
 @Injectable({providedIn: 'root'})
 export class AuthService {
-  user = new Subject<User>();
+  user = new BehaviorSubject<User>(null);
+  token: string = null;
 
   constructor(private http: HttpClient) {
   }
 
-  signup(email: string, password: string,) {
+  signup(email: string, password: string) {
     return this.http.post<AuthResponseData>('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBYI5VPnwYipmZol-zryoxytxYaZbYuWiM',
       {
         email: email,
