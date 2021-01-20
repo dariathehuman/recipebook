@@ -8,6 +8,7 @@ import {RecipesDetailsComponent} from './recipes/recipes-details/recipes-details
 import {RecipesEditComponent} from './recipes/recipes-edit/recipes-edit.component';
 import {RecipesResolverService} from './recipes/recipes-resolver.service';
 import {AuthComponent} from './auth/auth.component';
+import {AuthGuard} from './auth/auth.guard';
 
 const appRoutes: Routes = [
   {
@@ -18,6 +19,7 @@ const appRoutes: Routes = [
   {
     path: 'recipes',
     component: RecipesComponent,
+    canActivate: [AuthGuard],
     children: [
       {
         path: '',
