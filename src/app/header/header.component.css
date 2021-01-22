@@ -1,5 +1,5 @@
 .header {
-  background-color: #B9C5C7;
+  background-color: #4A8D98;
 }
 
 .header a {
@@ -36,7 +36,7 @@
 .header__link {
   font-size: 30px;
   line-height: 35px;
-  color: #494646;
+  color: #AEC086;
   cursor: pointer;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .header__dropdown-button {
-  color: #494646;
+  color: #AEC086;
   cursor: pointer;
   margin-right: 24px;
 }
@@ -77,7 +77,7 @@
   left: 0;
   padding: 16px 10px;
   list-style: none;
-  background: #FFFFFF;
+  background: #ECECEC;
   border-radius: 10px;
 }
 
@@ -88,7 +88,7 @@
 .header__dropdown-menu a {
   font-size: 24px;
   line-height: 20px;
-  color: #494646;
+  color: #AEC086;
   cursor: pointer;
 }
 
