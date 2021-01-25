@@ -1,7 +1,10 @@
+<ng-template appPlaceholder></ng-template>
 <section class="auth">
-  <div class="error" *ngIf="error">
-    <p>{{ error }}</p>
-  </div>
+<!--  <app-alert-->
+<!--    [message]="error"-->
+<!--    *ngIf="error"-->
+<!--    (close)="onHandleError()"-->
+<!--  ></app-alert>-->
   <div class="loader" *ngIf="isLoading">
     <app-loader></app-loader>
   </div>
