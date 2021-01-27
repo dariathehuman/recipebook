@@ -1,6 +1,25 @@
+@media (max-width: 1023px) {
+  form {
+    width: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  form {
+    margin-top: 24px;
+    width: 100%;
+  }
+}
+
 .edit-buttons {
   display: flex;
   margin-bottom: 24px;
+}
+
+@media (max-width: 767px) {
+  .edit-buttons {
+    justify-content: space-around;
+  }
 }
 
 .button {
@@ -13,6 +32,13 @@
   border: none;
 }
 
+@media (max-width: 1023px) {
+  .button {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
 .save {
   width: 150px;
   background: #AEC086;
@@ -21,6 +47,13 @@
 .cancel {
   width: 150px;
   background: #B4504B;
+}
+
+@media (max-width: 767px) {
+  .button {
+    width: 120px;
+    margin-right: 0;
+  }
 }
 
 .edit-fields {
@@ -35,6 +68,14 @@
   font-size: 24px;
   line-height: 28px;
   color: #1C2C56;
+}
+
+@media (max-width: 1023px) {
+  .edit-fields label {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .edit-fields input,
@@ -54,6 +95,12 @@
   margin-bottom: 24px;
 }
 
+@media (max-width: 1023px) {
+  .edit-fields__item {
+    margin-bottom: 16px;
+  }
+}
+
 .img-preview {
   display: block;
   width: 384px;
@@ -61,6 +108,19 @@
   object-fit: cover;
   margin-top: 16px;
   border-radius: 16px;
+}
+
+@media (max-width: 1023px) {
+  .img-preview {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .img-preview {
+    width: 100%;
+  }
 }
 
 .ingredients-fields {
@@ -98,6 +158,31 @@
   background: #B4504B;
   border-radius: 10px;
   border: none;
+}
+
+@media (max-width: 1023px) {
+  .ingredients-field {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .ingredients-field--name {
+    width: 160px;
+  }
+
+  .ingredients-field--amount {
+    width: 58px;
+  }
+
+  .clear {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ingredients-field--name {
+    width: 140px;
+  }
 }
 
 .add {

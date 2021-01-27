@@ -2,8 +2,29 @@
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
+  padding-bottom: 80px;
   max-width: 1008px;
   margin: 0 auto;
+}
+
+@media (max-width: 1279px) {
+  .recipes-container {
+    max-width: 944px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .recipes-container {
+    max-width: 704px;
+  }
+}
+
+@media (max-width: 767px) {
+  .recipes-container {
+    flex-direction: column;
+    padding: 40px 20px;
+    max-width: 100%;
+  }
 }
 
 .recipes-select {

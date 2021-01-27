@@ -27,6 +27,20 @@
   color: #FFFFFF;
 }
 
+@media (max-width: 767px) {
+  .modal {
+    padding: 32px;
+    width: 280px;
+  }
+
+  .modal p {
+    margin: 0 auto 16px;
+    width: 200px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
 .modal__button {
   display: block;
   margin: 0 auto;

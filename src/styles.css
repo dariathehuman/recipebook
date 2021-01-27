@@ -9,9 +9,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
   color: #494646;
   background-color: #FFFFFF;
+  background-image: url("./assets/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 a {
@@ -19,12 +22,13 @@ a {
 }
 
 button {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
   cursor: pointer;
 }
 
 input,
 textarea {
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-weight: 300;
 }
 
@@ -32,4 +36,23 @@ textarea {
   padding-top: 40px;
   max-width: 1008px;
   margin: 0 auto;
+}
+
+@media (max-width: 1279px) {
+  .container {
+    max-width: 944px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    max-width: 704px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 40px 20px;
+    max-width: 100%;
+  }
 }

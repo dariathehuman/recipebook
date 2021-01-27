@@ -10,6 +10,22 @@
   transition: all 0.3s ease;
 }
 
+@media (max-width: 1023px) {
+  .recipe-button {
+    padding: 12px 20px;
+    width: 200px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .recipe-button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .recipe-button:hover {
   background: #AEC086;
 }
