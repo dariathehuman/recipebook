@@ -5,11 +5,13 @@ import {Observable, Subscription} from 'rxjs';
 import {Router} from '@angular/router';
 import {AlertComponent} from '../shared/alert/alert.component';
 import {PlaceholderDirective} from '../shared/placeholder.directive';
+import {fadeAnimation} from '../modules/animation/animations';
 
 @Component({
   selector: 'app-auth',
   templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.css']
+  styleUrls: ['./auth.component.css'],
+  animations: [fadeAnimation]
 })
 
 export class AuthComponent implements OnDestroy {

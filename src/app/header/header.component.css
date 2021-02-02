@@ -181,6 +181,7 @@
 .header__dropdown-menu {
   display: none;
   position: absolute;
+  z-index: 10;
   top: 16px;
   left: 0;
   padding: 16px 10px;
