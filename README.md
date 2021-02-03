@@ -1,6 +1,10 @@
-# Recipebook
+# 🥙 Recipebook
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
+
+## Open website
+
+[Click here](https://recipebookprod.vercel.app/)
 
 ## Development server
 
